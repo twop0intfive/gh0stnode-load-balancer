@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>gh0stnode cloud load balancer</title>
+  <script>
+    function redirectToRandomPage() {
+      var pages = [
+        'http://gh0stnode-dot-twop0intfive-dot-xyz.s3-website-us-east-1.amazonaws.com',
+      ];
+      
+      var randomIndex = Math.floor(Math.random() * pages.length);
+      var randomPage = pages[randomIndex];
+      
+      window.location.href = randomPage;
+    }
+
+    // Call the function when the page loads
+    window.onload = redirectToRandomPage;
+  </script>
+</head>
+<body>
+  <h1>balancing load...</h1>
+</body>
+</html>
